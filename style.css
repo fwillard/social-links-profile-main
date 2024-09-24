@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --gray-700: hsl(0, 0%, 20%);
+    --gray-800: hsl(0, 0%, 12%);
+    --gray-900: hsl(0, 0%, 8%);
+
+    background-color: var(--gray-900);
+    color: white;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr
+}
+
+.container {
+    background-color: var(--gray-800);
+    max-width: 21rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 1.5rem;
+}
+
+.avi {
+    max-width: 85px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.name {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+}
+
+.location {
+    font-weight: 600;
+    color: var(--green);
+    font-size: 1em;
+    margin: 0;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+button {
+    background-color: var(--gray-700);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: var(--green);
+    color: var(--gray-900);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--green);
+    color: var(--gray-900);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: var(--green);
+}
